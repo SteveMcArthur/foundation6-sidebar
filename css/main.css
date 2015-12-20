@@ -91,16 +91,6 @@ a:hover {
 	color: #FF5533;
 }
 
-.social-header i {
-	font-size: 3rem;
-	color: #fff;
-	margin: 10px 15px;
-}
-
-.social-header i:hover {
-	transform: scale(1.5);
-	transition: .6s ease-in-out;
-}
 
 .caption {
 	margin: 8rem auto;
@@ -232,6 +222,7 @@ ul.side-nav > li:hover > a {
 	left: -230px;
 	position: fixed;
 	width: 25%;
+	z-index: 999;
 
 }
 
@@ -243,8 +234,6 @@ ul.side-nav > li:hover > a {
 	-o-transform: translateX(230px);
 	transform: translateX(230px);
 }
-
-.sidebar: hover
 
 .sidebar:out {
 	box-shadow: none;
