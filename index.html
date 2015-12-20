@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sidebar Menu</title>
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700italic,900,900italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+	<div class="row full">
+		<div class="sidebar columns">
+			<div id="sidebar-trigger">
+				<div class="menu-icon"><i class="fi-list"></i></div>
+			</div>
+			<div class="middle-header">
+				<div class="logo">
+					Sidebar
+				</div>
+				<ul class="side-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content large-12 columns">
+			<section class="hero row">
+				<div class="caption">
+					<h1>Blah Dee Blah</h1>
+					<p>Say something important here.</p>
+				</div>
+			</section>
+			<div class="post-content row">
+
+
+				<div class="large-6 columns">
+					<article class="post">
+						<img alt="something" src="/images/clock-face.jpg">
+						<div class="box-caption">
+							<h2>Clocks Tell The Time</h2>
+							<div class="tags"><a href="#">Time</a> <a href="#">Clocks</a></div>
+						</div>
+					</article>
+				</div>
+
+				<div class="large-6 columns">
+					<article class="post">
+						<img alt="something" src="/images/lamp-hut.jpg">
+						<div class="box-caption">
+							<h2>Favourite Huts</h2>
+							<div class="tags">
+								<a href="#">Rustic</a>
+								<a href="#">Huts</a>
+								<a href="#">Lamps</a>
+								<a href="#">Shacks</a>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="large-6 columns">
+					<article class="post">
+						<img alt="something" src="/images/vintage-girl.jpg">
+						<div class="box-caption">
+							<h2>Manikins Galore</h2>
+							<div class="tags">
+								<a href="#">Dolls</a>
+								<a href="#">Dummies</a>
+								<a href="#">Manikins</a>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="large-6 columns">
+					<article class="post">
+						<img alt="something" src="/images/fried_snacks.jpg">
+						<div class="box-caption">
+							<h2>Pork Scratchings</h2>
+							<div class="tags"><a href="#">Food</a> <a href="#">Fried</a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="float-bar">
+		<div class="menu-icon"><i class="fi-arrow-up"></i></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+	<script>
+		$(document).foundation();
+		$(".float-bar .menu-icon').click(function () {
+			if ($('body').scrollTop() > 10) {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 'slow');
+			}
+		})
+	</script>
+</body>
+
+</html>
